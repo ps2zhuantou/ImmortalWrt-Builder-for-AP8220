@@ -21,9 +21,9 @@ uci set wireless.default_radio0.bss_transition='1'
 uci set wireless.default_radio0.proxy_arp='1'
 
 # Wireless radio0 specific settings
-uci set wireless.radio0.htmode='HE80'
-uci set wireless.radio0.channel='auto'
-uci set wireless.radio0.country='CN'
+uci set wireless.radio0.htmode='HE160'
+uci set wireless.radio0.channel='36'
+uci set wireless.radio0.country='US'
 
 # Wireless default settings for radio1
 uci set wireless.default_radio1.wnm_sleep_mode='1'
@@ -34,8 +34,8 @@ uci set wireless.default_radio1.proxy_arp='1'
 
 # Wireless radio1 specific settings
 uci set wireless.radio1.htmode='HE40'
-uci set wireless.radio1.channel='auto'
-uci set wireless.radio1.country='CN'
+uci set wireless.radio1.channel='1'
+uci set wireless.radio1.country='US'
 
 uci commit wireless
 
