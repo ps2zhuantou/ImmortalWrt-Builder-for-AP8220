@@ -78,6 +78,7 @@ jobs:
         run: |
           git clone --depth=1 https://github.com/gSpotx2f/luci-app-temp-status package/luci-app-temp-status
           git clone --depth=1 https://github.com/gSpotx2f/luci-app-cpu-status-mini package/luci-app-cpu-status-mini
+          git clone --depth=1 https://github.com/sbwml/luci-app-airconnect package/luci-app-airconnect
       
       - name: Update and install feeds
         run: |
