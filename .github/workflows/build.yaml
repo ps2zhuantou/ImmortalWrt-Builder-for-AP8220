@@ -81,6 +81,7 @@ jobs:
           git clone --depth=1 https://github.com/sbwml/luci-app-airconnect package/luci-app-airconnect
           git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
           git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
+          git clone --depth=1 https://github.com/goIntoAction/luci-app-turboacc package/luci-app-turboacc
       
       - name: Update and install feeds
         run: |
