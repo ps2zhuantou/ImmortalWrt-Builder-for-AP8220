@@ -83,6 +83,7 @@ jobs:
           git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
           git clone --depth=1 https://github.com/op4packages/pdnsd-alt package/pdnsd-alt
           git clone --depth=1 https://github.com/goIntoAction/luci-app-turboacc package/luci-app-turboacc
+          git clone --depth=1 https://github.com/aa65535/openwrt-dns-forwarder.git package/dns-forwarder
       
       - name: Update and install feeds
         run: |
