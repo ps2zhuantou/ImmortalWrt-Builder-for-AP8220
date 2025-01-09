@@ -1,4 +1,4 @@
-name: OpenWrt Builder
+name: ImmortalWrt Builder
 
 on:
   workflow_dispatch:
@@ -7,11 +7,11 @@ on:
   #  - cron: "0 18 * * *"
 
 env:
-  REMOTE_REPOSITORY: goIntoAction/openwrt-ipq
-  REMOTE_BRANCH: 24.10-nss
+  REMOTE_REPOSITORY: goIntoAction/immortalwrt-ipq
+  REMOTE_BRANCH: master
   CONFIG_FILE: build.config
   CUSTOM_FILES_PATH: files/
-  RELEASE_PREFIX: openwrt-qualcommax-ipq807x
+  RELEASE_PREFIX: immortalwrt-qualcommax-ipq807x
   # NSS_PACKAGES_REPOSITORY: qosmio/nss-packages
   # NSS_PACKAGES_REPOSITORY_BRANCH: NSS-12.5-K6.x
 
@@ -43,7 +43,7 @@ jobs:
       #     echo "latest_commit_sha=$nss_packages_repo_latest_commit_sha" >> $GITHUB_OUTPUT
 
   build:
-    name: Build OpenWrt
+    name: Build ImmortalWrt
     needs: check_commits
     # if: needs.check_commits.outputs.new_commits == 'true' || needs.check_commits.outputs.nss_packages_repo_new_commits == 'true' || github.event_name == 'workflow_dispatch'
     if: needs.check_commits.outputs.new_commits == 'true' || github.event_name == 'workflow_dispatch'
