@@ -8,7 +8,7 @@ on:
 
 env:
   REMOTE_REPOSITORY: goIntoAction/immortalwrt-ipq
-  REMOTE_BRANCH: master-rebase
+  REMOTE_BRANCH: master
   CONFIG_FILE: build.config
   CUSTOM_FILES_PATH: files/
   RELEASE_PREFIX: immortalwrt-qualcommax-ipq807x
