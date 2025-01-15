@@ -7,8 +7,8 @@ on:
   #  - cron: "0 18 * * *"
 
 env:
-  REMOTE_REPOSITORY: VIKINGYFY/immortalwrt
-  REMOTE_BRANCH: owrt
+  REMOTE_REPOSITORY: goIntoAction/immortalwrt-ipq
+  REMOTE_BRANCH: master
   CONFIG_FILE: build.config
   CUSTOM_FILES_PATH: files/
   RELEASE_PREFIX: immortalwrt-qualcommax-ipq807x
