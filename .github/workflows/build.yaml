@@ -132,7 +132,7 @@ jobs:
       - name: Get short commit ID
         id: commit-id
         run: |
-          FULL_COMMIT_ID="${{ steps.check_new_commits.outputs.latest_commit_sha }}"
+          FULL_COMMIT_ID="${{ needs.check_commits.outputs.latest_commit_sha }}"
           SHORT_COMMIT_ID=$(echo "$FULL_COMMIT_ID" | cut -c 1-10)
           echo "Short Commit ID: $SHORT_COMMIT_ID"
           echo "SHORT_COMMIT_ID=$SHORT_COMMIT_ID" >> $GITHUB_ENV
