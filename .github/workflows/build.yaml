@@ -81,6 +81,7 @@ jobs:
           git clone --depth=1 https://github.com/sbwml/luci-app-airconnect package/luci-app-airconnect
           git clone --depth 1 https://github.com/hudra0/luci-app-qosmate package/luci-app-qosmate
           git clone --depth 1 https://github.com/hudra0/qosmate package/qosmate
+          git clone --depth 1 https://github.com/padavanonly/luci-app-mwan3helper-chinaroute package/luci-app-mwan3helper-chinaroute
           
       - name: Update and install feeds
         run: |
